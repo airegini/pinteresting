@@ -77,4 +77,7 @@ Pinteresting::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #reqiured for HEroku
+  config.action_mailer.default_url_options = { :host => 'http://lit-thicket-9873.herokuapp.com/' }
 end

@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
-
+gem 'devise', '~> 3.1.1'
 group :development, :test do
      gem 'sqlite3'
 end
