@@ -5,4 +5,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def brands
+  end
+
+  def profile
+  end
 end
