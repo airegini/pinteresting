@@ -1,4 +1,6 @@
 Pinteresting::Application.routes.draw do
+  devise_for :stores
+  
   resources :pins
 
   devise_for :users

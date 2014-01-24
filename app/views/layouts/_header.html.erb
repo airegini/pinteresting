@@ -9,25 +9,39 @@
         <span class="icon-bar"></span>
       </button>
       <ul class="navbar-brand" >
-      <li><%= link_to "WellDoneInno", root_path %></li>
+      
     </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
+       
+       <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to "Well Done.", root_path %></li>
+        
+
+        <!--<ul class="nav navbar-nav navbar-right">
+        <% if store_signed_in? %>
+        <li><%= link_to "Store Log out", destroy_store_session_path, method: :delete %></li>
+          <% else %>
+          <li><%= link_to "Store Log in", new_store_session_path %></li>
+        <% end %>
+       </ul> -->
+
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Brands", brands_path %></li>
+        
         <% if user_signed_in? %>
            <li>
             <%= link_to new_pin_path do %>
               <span class="glyphicon glyphicon-plus"></span> New Pin
             <% end %>
           </li>
-        
           <li><%= link_to "Profile", profile_path %></li>
           <li><%= link_to "Account Settings", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-          </li><% new_user_session_path %></li>
+         
+
         <% end %>
     </ul>

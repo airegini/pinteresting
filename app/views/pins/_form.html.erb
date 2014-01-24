@@ -10,11 +10,17 @@
     </div>
   <% end %>
   <div class="form-group">
-   <%= f.label :description %>
+   
+   <div class="form-group">
+       <%= f.label :name %>
+       <%= f.text_field :name, class: "form-control", :autofocus => true %>
+     </div>
+
+    <%= f.label :description %>
     <%= f.text_field :description, class: "form-control" %>
 
   <div class="form-group">
-   <%= f.label :description %>
+   <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
   <div class="form-group">
