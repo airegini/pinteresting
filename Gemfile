@@ -10,11 +10,12 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.1.1'
-group :development, :test do
-gem 'sqlite3'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
-gem 'aws-sdk', '~> 1.20.0'
-gem 'masonry-rails', '~> 0.2.0'
+
+group :development, :test do
+	gem 'sqlite3'
+	gem 'aws-sdk', '~> 1.20.0'
+	gem 'masonry-rails', '~> 0.2.0'
 end
 
 group :production do
