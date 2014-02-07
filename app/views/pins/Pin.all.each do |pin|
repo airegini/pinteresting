@@ -1,0 +1,5 @@
+Pin.all.each do |pin|
+	pin.description = nil
+	pin.save
+
+end

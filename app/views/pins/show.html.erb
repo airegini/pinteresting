@@ -7,9 +7,11 @@
         <%= image_tag @pin.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <p><%= @pin.description %></p>
-        <p><%= @pin.name %></p>
+        
+        <!--<p><%= @pin.name %></p>-->
 
+        <center><p><%= @pin.description %></p></center>
+        
         <p><strong><%= @pin.user.name if @pin.user %></strong></p>
         
         <% if @pin.user == current_user %>
